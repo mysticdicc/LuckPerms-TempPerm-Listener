@@ -1,0 +1,14 @@
+name: lp-temp-listener
+version: '${version}'
+
+main: lpTempListener.LpTempListener
+bootstrapper: lpTempListener.LpTempListenerBootstrap
+loader: lpTempListener.LpTempListenerLoader
+api-version: '26.1.2'
+load: POSTWORLD
+dependencies:
+  server:
+    LuckPerms:
+      load: BEFORE
+      required: true
+      join-classpath: true
