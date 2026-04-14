@@ -6,6 +6,9 @@ assignment of permissions without functionality leaking.
 ## Current Permission Mapping
 | Permission | Command Mapping |
 | -------- | ------- |
-| essentials.fly | fly <username> disabled |
-| essentials.god | god <username> disabled |
+| essentials.fly | fly (username) disabled |
+| essentials.god | god (username) disabled |
+
+## Server Reboots
+The plugin stores the scheduled commands in a sqlLite dB until they are executed, so you can be sure even if your server crashes or reboots the permissions will be revoked.
 
